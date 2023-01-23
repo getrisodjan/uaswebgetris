@@ -1,0 +1,303 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+div.profil {
+	text-indent: 50px;
+}
+.medsos {
+	padding: 5px 0;
+	background-color: #C17D00;
+}
+.medsos ul li {
+	display:  inline-block;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;	
+}
+
+.container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+header {
+	padding: 5px 0;
+}
+header h1 {
+	
+	float: left;
+	padding: 15px;
+	color: #C17D00;
+}
+header ul {
+	
+	float: right;
+}
+header ul li {
+	display: inline-block;
+
+}
+header ul li a {
+	padding: 25px 20px;
+	display: inline-block;
+}
+ 
+header ul li a:hover{
+	background-color: #C17D00;
+	color: #fff;
+}
+
+.active {
+	background-color: #C17D00;
+	color: #fff;
+}
+
+.banner {
+	height: 70vh;
+	
+	background-image: url('../img/wall.jpg');
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after {
+	content: 60vh;
+	display: 1px block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 229, 255, 6);
+}
+.banner h2 {
+	color: #fff;
+	z-index: 1;
+	padding: 20px 25px;
+	border: 3px solid #fff;
+}F
+
+section {
+	padding: 50px 0;
+}
+
+section h3 {
+	text-align: center;
+	padding: 20px 0;
+	color:#C17D00;
+	margin-bottom: 20px;
+
+}
+
+.about p {
+	color: #666;
+	word-spacing: 2px;
+	line-height: 25px;
+}
+
+.service {
+	background-color: #EFEFEF;
+}
+
+.box {
+
+	color:#C17D00;
+}
+.box:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.box .col-4 {
+	width: 33%;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	float: right;
+}
+.icon {
+	width: 70px;
+	height: 70px;
+	border: 1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px; 
+	margin: 0 auto;
+}
+.box .col-4 h4 {
+	margin: 25px 0;
+}
+
+footer {
+	padding: 30px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+.bg-loader {
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-loader .loader {
+	width: 100px;
+	height: 100px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	border-top-color: #C17D00;
+	border-right-color: #C17D00;
+	border-bottom-color: #C17D00;
+	animation: putar .5s linear infinite;  
+}
+.label {
+	background-color: #C17D00;
+	color: #fff;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes putar {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* ini untuk setting responsif jika saat diakses di HP*/
+@media screen and (max-width: 768px){
+	.container {
+		width: 90%;
+	}
+	header h1 {
+		text-align: center;
+		float: none;
+	}
+	header ul {
+		text-align: center;
+		float: none;
+	}
+}
+
+
+* {box-sizing:border-box}
+
+
+/*ini untuk slide*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
